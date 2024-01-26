@@ -1,0 +1,162 @@
+:root{
+    font-size: 62.5%;
+    --color-primary: hsl(235, 35%, 19%);
+    --color-secondary: hsl(358, 45%, 58%);
+    --color-return: hsl(358, 36%, 37%);
+    --color-headings: hsl(358, 78%, 69%);
+    --color-font: hsla(0, 0%, 100%, 0.902);
+    --color-shadow: hsl(235, 36%, 35%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+    background-color:var(--color-primary);
+    font-size: 1.6rem;
+    font-family: 'Open Sans', 'Sans Serif';
+}
+p,i,h1,h2{
+    color:var(--color-font);
+    text-align:center;
+
+}
+i{
+    font-size:3.2rem;
+}
+h1{
+    font-size:3.2rem;
+}
+span{
+    color:var(--color-headings)
+}
+section{
+    display: flex;
+    align-items:center;
+    height:100%;
+
+}
+.container{
+    width: min(42.5rem,100%);
+    
+    margin-inline:auto;
+    padding-inline:2rem;
+    justify-content: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel{
+    display: flex;
+    text-align:center;
+    justify-content: space-between;
+    align-items:center;
+    width: 40rem;
+    margin-block: 5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+}
+a{
+    color: var(--color-return);
+}
+.panel button{
+    border:0;
+    font-size:2rem;
+    flex: 1;
+    height:4rem;
+    cursor: pointer;
+    color:var(--color-font);
+    margin: 0.6rem;
+    padding: 0.4rem;
+    border-radius: 3%;
+    background-color:transparent;
+
+}
+
+/* you need to add css for the panel buttons and active panel */
+.timer{
+    display:flex; 
+    justify-content:center;
+    align-items:center;
+    width: 30rem;
+    height:30rem;
+    border-radius:50%;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 20px 20px var(--color-shadow);
+}
+.circle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 25rem;
+    height:25rem;
+    border-radius:50%;
+    position:relative;
+    background-color: var(--color-secondary);
+
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+ .btn-container {
+    margin-top: 7rem;
+    display:flex;
+    justify-content:center;
+    gap: 2rem;
+    border-radius: 3%;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+    padding: 1rem;
+
+ }
+ #btn-start,#btn-pause{
+    padding:1rem 2rem;
+    border-radius: 0.5rem;
+    font-size:2rem;
+    cursor:pointer;
+    background-color: transparent;
+ }
+ #btn-reset{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    color: var(--color-font);
+    font-size: 1rem;
+ }
+ .hide{
+    display:none;
+ }
+ .show{
+    display: block;
+ }
+ .btn-container button{
+    border: none;
+    background-color: transparent;
+    color: var(--color-font);
+    cursor: pointer;
+ }
+ .time-btn-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+ }
+ .time-btn-container span{
+    font-size:5.6rem;
+    color:var(--color-font);
+ }
+
+
+
+ .panel button.btn-focus {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}

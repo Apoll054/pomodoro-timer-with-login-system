@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width", initial-scale="1.0">
+        <title>Productivity Center Signup</title>
+        <!---------------------fonts----------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <!---------------------Stylesheet----------------------->
+        <link rel="stylesheet" href="./signupstyle.css">
+    </head>
+    <body>
+        <section>
+         <div class="container">
+            <h1>Sign-up</h1>
+            <div class="panel">
+                <form action="process-signup.php" method="post" id="signup" novalidate>
+                    <div class="label-container">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="label-container">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div><input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="label-container">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="label-container">
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="label-container">
+                        <label for="password_confirmation">Repeat password:</label>
+                    </div>
+                    <div>
+                        <input type="password" id="password_confirmation" name="password_confirmation">
+                    </div>
+                    
+                    <button>Sign up</button>
+                </form>
+            </div>
+         </div>
+        </section>
+    </body>
+</html>
